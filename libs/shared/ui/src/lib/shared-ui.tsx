@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+
 //Static Import
-import { ReactComponent as ApplePay } from 'assets/images/apple-pay.svg';
+import { ReactComponent as ApplePay } from './assets/images/apple-pay.svg';
 
 
 //Import with modules syntax

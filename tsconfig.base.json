@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@github-test/shared/assets": ["libs/shared/assets/src/index.ts"],
+      "@github-test/shared/assets/*": ["libs/shared/assets/src/assets/**/*"],
       "@github-test/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
