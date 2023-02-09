@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/git-test/src",
   "projectType": "application",
+  "implicitDependencies": ["shared-assets"],
   "targets": {
     "build": {
       "executor": "@nrwl/webpack:webpack",
@@ -15,7 +16,12 @@
         "baseHref": "/",
         "main": "apps/git-test/src/main.tsx",
         "tsConfig": "apps/git-test/tsconfig.app.json",
-        "assets": ["apps/git-test/src/favicon.ico", "apps/git-test/src/assets"],
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/assets",
+            "output": "assets"
+          },"apps/git-test/src/favicon.ico", "apps/git-test/src/assets"],
         "styles": [],
         "scripts": [],
         "webpackConfig": "apps/git-test/webpack.config.js"

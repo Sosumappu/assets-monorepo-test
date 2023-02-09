@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import NxWelcome from './nx-welcome';
 
+import { ApplePayIcon } from "@github-test/shared/ui";
+
 const StyledApp = styled.div`
   // Your style here
 `;
@@ -8,6 +10,7 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
+      <ApplePayIcon />
       <NxWelcome title="git-test" />
     </StyledApp>
   );
